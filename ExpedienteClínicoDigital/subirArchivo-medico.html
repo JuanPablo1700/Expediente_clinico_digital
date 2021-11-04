@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="estilos/subirArchivo-medico.css">
+    <title>Mi historial médico</title>
+</head>
+<body>
+    <div class="grid-container">
+        <header class="row">
+            <div>
+                <a href="index.html">
+                    <img src="img/logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="name-img">
+                <p>Nombre del Médico</p>
+                <img src="img/doctor.png" alt="logoMedico"/>
+            </div>
+        </header>
+        <main>
+            <div class="grid-layout">
+                <div class="grid-lateral">
+                    <a href="diagnostico-medico.html" class="button-1">Diagnóstico</a>
+                    <a href="medicamento-medico.html" class="button-2">Medicamento</a>
+                    <a href="antecedentes_medico.html" class="button-3">Antecedentes</a>
+                    <a href="subirArchivo-medico.html" class="button-4">Subir archivo</a>
+                    <a href="historialMedico-medico.html" class="button-5">Terminar registro</a>
+                </div>
+                <div class="grid-principal">
+                    <p class="nombrePaciente">Paciente: Nombre del paciente</p>
+
+                    <div class="grid-contenido">
+                        <div class="tituloArchivo">
+                            <p>Titulo del archivo</p>
+                            <input type="text" placeholder="Titulo para identificar el archivo">
+                        </div>
+                        <div class="tipo">
+                            <p>Tipo</p>
+                            <select name="select">
+                                <option value="value1" selected>Seleccione una opción</option>
+                                <option value="value2">Análisis</option>
+                                <option value="value3">Radiografía</option>
+                                <option value="value3">Ultrasonido</option>
+                                <option value="value3">Resonancia magnética</option>
+                                <option value="value3">Tomografía</option>
+                                
+                                <option value="value3">Otro</option>
+                              </select>
+                        </div>
+                        <div class="observaciones">
+                            <p>Observaciones</p>
+                            <textarea cols="40" rows="4"></textarea>
+                        </div>
+                        <div class="imagen">
+                            <div class="etiquetas">
+                                <p>Seleccione un archivo</p>
+                                <p class="nomArchivo">Archivo1.png</p>
+                            </div>
+
+                            <a href="Folder">
+                                <img src="img/folder.png" alt="imagen de un folder">
+                            </a>
+                        </div>
+                        <div class="botonAgregar">
+                            <a href="Agregar">Agregar</a>
+                        </div>
+                        <div class="tabla">
+                            <div class="tablaAntecedentes">
+                                <table>
+                                    <tr>
+                                        <th>Titulo del archivo</th>
+                                        <th>Nombre del archivo</th>
+                                        <th>Tipo</th>
+                                        <th>Observaciones</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Radiografia pie derecho</td>
+                                        <td>R-pie-der.png</td>
+                                        <td>Radiografia</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </main>
+        <footer>Equipo de trabajo</footer>
+    </div>
+</body>
+</html>

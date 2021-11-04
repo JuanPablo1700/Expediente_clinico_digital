@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="estilos/medicamento-medico.css" />
+    <title>Mi historial médico</title>
+  </head>
+  <body>
+    <div class="grid-container">
+      <header class="row">
+        <div>
+          <a href="index.html">
+            <img src="img/logo.png" alt="logo" />
+          </a>
+        </div>
+        <div class="name-img">
+          <p>Nombre del Médico</p>
+          <img src="img/doctor.png" alt="logoMedico" />
+        </div>
+      </header>
+      <main>
+        <div class="grid-layout">
+          <div class="grid-lateral">
+            <a href="diagnostico-medico.html" class="button-1">Diagnóstico</a>
+            <a href="medicamento-medico.html" class="button-2">Medicamento</a>
+            <a href="antecedentes_medico.html" class="button-3">Antecedentes</a>
+            <a href="subirArchivo-medico.html" class="button-4">Subir archivo</a>
+          </div>
+
+          <div class="grid-principal">
+            
+            <!-- Aqui va el contenido -->
+            <div class="nombre">
+              <p class="nPaciente">Paciente: Matthew C.</p>
+            </div>
+            <div class="grid-contenido">
+              <div class="medicamento">
+                <p class="etiqueta">Nombre del medicamento</p>
+                <input type="text" placeholder="Medicamento" />
+              </div>
+              <div class="via">
+                <p class="etiqueta">Vía de administración</p>
+                <input type="text" placeholder="Vía" />
+              </div>
+              <div class="frecuencia">
+                <p class="etiqueta">Frecuencia de administración</p>
+                <input type="text" placeholder="Frecuencia" />
+              </div>
+              <div class="duracion">
+                <p class="etiqueta">Duración del medicamento</p>
+                <input type="text" placeholder="Duración" />
+              </div>
+              
+              <div class="notas">
+                <p class="etiqueta">Notas sobre el medicamento</p>
+                <textarea
+                  cols="30"
+                  rows="5"
+                  placeholder="Agrega aquí algo importante"
+                ></textarea>
+                <div class="btn">
+                    <a href="#">Agregar</a>
+                  </div>
+              </div>
+              <div class="tabla">
+                <table>
+                  <tr>
+                    <th>Medicamento</th>
+                    <th>Vía</th>
+                    <th>Frecuencia</th>
+                    <th>Duración</th>
+                    <th>Notas</th>
+                  </tr>
+                  <tr>
+                    <td>Paracetamol</td>
+                    <td>Oral</td>
+                    <td>Cada 8 hrs</td>
+                    <td>Por 3 días</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer>Equipo de trabajo</footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="estilos/diagnostico-medico.css">
+    <title>Mi historial médico</title>
+</head>
+<body>
+    <div class="grid-container">
+        <header class="row">
+            <div>
+                <a href="index.html">
+                    <img src="img/logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="name-img">
+                <p>Nombre del Médico</p>
+                <img src="img/doctor.png" alt="logoMedico"/>
+            </div>
+        </header>
+        <main>
+            <div class="grid-layout">
+                <div class="grid-lateral">
+                    <a href="diagnostico-medico.html" class="button-1">Diagnóstico</a>
+                    <a href="medicamento-medico.html" class="button-2">Medicamento</a>
+                    <a href="antecedentes_medico.html" class="button-3">Antecedentes</a>
+                    <a href="subirArchivo-medico.html" class="button-4">Subir archivo</a>
+                </div>
+                <div class="grid-principal">
+
+                    <p class="nombrePaciente">Paciente: Nombre del paciente</p>
+
+                    <div class="seccion1">
+                       
+                        <div class="datos-1">
+                            <div class="general">
+                                <p>Diagnóstico general</p>
+                                <input type="text" placeholder="Diagnóstico general">
+                            </div>
+                            <div>
+                                <p>Descripción del diagnóstico</p>
+                                <textarea cols="30" rows="5" placeholder="Agrega aquí algo importante"></textarea>
+                            </div>
+                        </div>
+                        <div class="boton-1">
+                            <a href="Agregar">Agregar</a>
+                        </div>
+                    
+                    </div>
+
+                    <div class="seccion2">
+
+                        <div class="datos-2">
+                            <div class="peso">
+                                <p>Peso</p>
+                                <input type="text" placeholder="En kg">
+                            </div>
+                            <div class="altura">
+                                <p>Altura</p>
+                                <input type="text" placeholder="En metros">
+                            </div>
+                        </div>
+                        <div class="boton-2">
+                            <a href="Actualizar">Actualizar</a>
+                        </div>
+
+                    </div>
+
+                    <div class="seccion3">
+
+                        <div class="datos-3">
+                            <div>
+                                <p>Nueva alergia</p>
+                                <input type="text" placeholder="Alergia">
+                            </div>
+                        </div>
+                        <div class="boton-3">
+                            <a href="Agregar">Agregar</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>Equipo de trabajo</footer>
+    </div>
+</body>
+</html>

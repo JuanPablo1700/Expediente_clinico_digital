@@ -1,0 +1,270 @@
+html {
+    font-size: 62.5%; /* 16px x 62.5% = 10px = 1rem*/
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-size: 1.6rem;
+    /* font-family: ; */
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+    'header'
+    'main'
+    'footer';
+    grid-template-columns: 1fr;
+    grid-template-rows: 10rem 1fr 5rem;
+    height: 100%;
+}
+
+header {
+    grid-area: header;
+    background-color: #146173;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a img {
+    margin-top: 2rem;
+    padding: 1rem;    
+}
+
+.name-img {
+    display: flex;
+    align-items: center;
+}
+
+.name-img p {
+    padding: 1rem;
+    color: #ffffff;
+}
+
+.name-img img {
+    height: 7rem;
+    margin: 1rem;
+}
+
+main {
+    grid-area: main;
+    
+}
+
+.grid-layout {
+    display: grid;
+    grid-template-areas: 'barra contenido';
+    grid-template-columns: 13rem 1fr;
+    
+    height: 100%;
+    margin: 0;
+}
+
+.grid-lateral {
+    grid-area: barra;
+    display: grid;
+    grid-template-rows: 4rem 4rem 4rem 4rem 4rem auto;
+    background-color: #4995A6;
+    position: fixed;
+    height: 100%;
+    width: 13rem;
+    margin-top: .8rem;
+}
+
+.grid-lateral a:hover {
+    text-decoration: underline;
+}
+
+.button-3 {
+    padding-top: 1rem;
+    padding-left: 2.5rem;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #146173;
+    border: 1px solid #146173;
+}
+
+.button-1,.button-2,.button-4 {
+    text-align: center;
+    padding-top: 1rem;
+    text-decoration: none;
+    color: #ffffff;
+    border: 1px solid #146173;
+    border-bottom: 1px solid #146173
+}
+
+.button-3 {
+    border-top: 2px solid #146173;
+}
+
+.button-4 {
+    border-bottom: 2px solid #146173
+}
+
+.grid-principal {
+    grid-area: contenido;
+    display: grid;
+    grid-template-areas:'nombre'
+                        'contenidoPrin';
+    grid-template-columns: auto;
+    grid-template-rows: 3rem auto;
+    gap: 2rem;
+    margin-left: 2rem;
+    width: 100%;
+    margin: 0 auto;
+}
+.nombre{
+    background-color: #ffffff;
+    display: block;
+}    
+.nPaciente{
+    grid-area: nombre;
+    margin: 2rem; 
+    font-size: 2rem;
+    font-weight: bold;
+    height: auto;
+
+}
+
+.grid-contenido {
+    grid-area: contenidoPrin;
+    display: grid;
+    grid-template-areas: 
+                        'medicamento via'
+
+                        'notas notas'
+                        'tbl tbl';
+    grid-template-columns: auto auto;
+    grid-template-rows: 9rem 20rem auto auto ;
+    gap: 1rem;
+    padding: 1rem;
+    margin-left: 2rem;
+    width: 60%;
+    height: 100%;
+    margin: 0 auto;
+    
+}
+
+.medicamento div, .via div, .frecuencia div, .duracion div, .notas div{
+   /*  display: block; */
+    margin:auto; 
+    height: 30%;
+    border: 1px solid #fcfcfc;
+    
+}
+
+.medicamento, .via, .frecuencia, .duracion, .notas{
+    display: block;
+    margin:auto; 
+    height: 90%;
+    width: 90%;
+    border: 1px solid #fcfcfc;
+    padding: 1rem;
+    position: relative;
+    
+ }
+
+.medicamento{
+    grid-area: medicamento;
+    margin-left: auto;
+    margin-right: 10px;
+    margin: 0 auto;
+}
+.medicamento input, .via input, .frecuencia input, .duracion input, .notas textarea{
+    display: block;
+    margin: auto;
+}
+
+.via{
+    grid-area: via;
+    margin-left: 10px;
+    
+}
+.frecuencia{
+    grid-area: frecuencia;
+    margin-left: auto;
+    margin-right: 10px;
+}
+.duracion{
+    grid-area: dur;
+    margin-left: 10px;
+}
+.notas{
+    grid-area: notas;
+    margin: auto;
+}
+.btn{
+    /* margin: 0 auto; */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: fit-content;
+    align-items: center;
+}
+.btn a{
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #146173;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    border-radius: 2px;
+    height: fit-content;
+    
+}
+.etiqueta{
+    font-weight: bold;
+    margin-left: auto;
+    text-align: center;
+}
+
+
+.tabla{
+    grid-area: tbl;
+    
+}
+table{
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+}
+
+table, th, td{
+    border: 1px solid #146173;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+th{
+    color: #ffffff;
+    background-color: #4995A6;
+}
+
+/*renglones impares*/
+tr:nth-child(even){
+    background-color: #fcfcfc;
+}
+/*renglones pares*/
+tr:nth-child(odd){
+    background-color: #a8dadc;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #146173;
+    color: #ffffff;
+    padding-left: 1rem;
+    padding-top: 2rem;
+    z-index: 1;
+}
