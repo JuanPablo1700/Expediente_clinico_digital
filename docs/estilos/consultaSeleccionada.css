@@ -1,0 +1,158 @@
+html {
+    font-size: 62.5%; /* 16px x 62.5% = 10px = 1rem*/
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-size: 1.6rem;
+    /* font-family: ; */
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+    'header'
+    'main'
+    'footer';
+    grid-template-columns: 1fr;
+    grid-template-rows: 10rem 1fr 5rem;
+    height: 100%;
+}
+
+header {
+    grid-area: header;
+    background-color: #146173;
+    position: fixed;
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a img {
+    margin-top: 2rem;
+    padding: 1rem;    
+}
+
+.name-img {
+    display: flex;
+    align-items: center;
+}
+
+.name-img p {
+    padding: 1rem;
+    color: #ffffff;
+}
+
+.name-img img {
+    height: 7rem;
+    margin: 1rem;
+}
+
+main {
+    grid-area: main;
+}
+
+.grid-layout {
+    display: grid;
+    grid-template-areas:'titulo titulo titulo'
+                        'general medidas alergias'
+                        'descripcion descripcion descripcion'
+                        'tabla tabla tabla';
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 100%;
+    gap: 2rem;
+    margin: 0rem 5rem 0rem 5rem;
+}
+
+.titulo {
+    grid-area: titulo;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.general {
+    grid-area: general;
+    border: 1px solid #c4c4c4;
+    padding: 1rem 2rem;
+    height: fit-content;
+}
+
+.medidas {
+    grid-area: medidas;
+    border: 1px solid #c4c4c4;
+    padding: 1rem 2rem;
+    height: fit-content;
+}
+
+.alergias {
+    grid-area: alergias;
+    border: 1px solid #c4c4c4;
+    padding: 1rem 2rem;
+    height: fit-content;
+}
+
+.descripcion {
+    grid-area: descripcion;
+    border: 1px solid #c4c4c4;
+    padding: 1rem 2rem;
+    height: fit-content;
+}
+
+.tabla {
+    grid-area: tabla;
+    border: 1px solid #c4c4c4;
+    margin: 0rem;
+}
+
+table{
+    width: 100%;
+}
+
+table, th, td{
+    border: 1px solid #146173;
+    border-collapse: collapse;
+    padding: .5rem;
+}
+
+th{
+    color: #ffffff;
+    background-color: #4995A6;
+}
+
+/* /renglones impares/ */
+tr:nth-child(even){
+    background-color: #fcfcfc;
+}
+/* /renglones pares/ */
+tr:nth-child(odd){
+    background-color: #a8dadc;
+}
+
+.tablaMedicamento {
+    margin: 2rem;
+}
+
+.tablaAntecedentes {
+    margin: 2rem;
+}
+
+.tablaArchivos {
+    margin: 2rem;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #146173;
+    color: #ffffff;
+    padding-left: 1rem;
+    padding-top: 2rem;
+    z-index: 1;
+}

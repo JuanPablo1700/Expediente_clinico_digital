@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="estilos/nuevoUsuario-paciente.css" rel="Stylesheet" />
+    <title>Mi historial médico</title>
+</head>
+
+<body>
+    <div class="grid-container">
+        <header class="row">
+            <div>
+                <a href="index.html">
+                    <img src="img/logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="name-img">
+                <p>Nuevo usuario</p>
+
+            </div>
+        </header>
+        <main>
+            <div class="grid-container-main">
+
+                <div class="nombre">
+                    <p class="etiqueta">Nombre</p>
+                    <input type="text" id="Nombre" name="Nombre" placeholder="Escribe tu nombre" required="true" />
+                </div>
+                <div class="apeM">
+                    <p class="etiqueta">Apellido paterno</p>
+                    <input type="text" id="ApellidoP" name="ApellidoP" placeholder="Apellido Paterno" required="true" />
+                </div>
+                <div class="apeP">
+                    <p class="etiqueta">Apellido materno</p>
+                    <input type="text" id="ApellidoM" name="ApellidoM" placeholder="Apellido Materno" required="true" />
+                </div>
+                <div class="gen">
+                    <label class="etiqueta">Género</label><br/>
+                    <input type="radio" id="femenino" name="genero" value="femenino" />
+                    <label for="femenino">Femenino</label><br />
+                    <input type="radio" id="masculino" name="genero" value="masculino" />
+                    <label for="masculino">Masculino</label><br />
+                </div>
+                <div class="fecha">
+                    <p class="etiqueta">Fecha de nacimmiento</p>
+                    <input type="date" placeolder="Fecha nacimiento">
+                </div>
+                <div class="curp">
+                    <p class="etiqueta">Curp</p>
+                    <input type="text" id="Curp" name="Curp" placeholder="CURP" required="true" />
+                </div>
+                <div class="tipoS">
+                    <p class="etiqueta">Tipo de sangre</p>
+                    <input type="text" id="Sangre" name="Sangre" placeholder="Tipo Sangre" required="true" />
+                </div>
+                <div class="estado">
+                    <p class="etiqueta">Estado</p>
+                    <input type="text" id="Estado" name="Estado" class="etiqueta" placeholder="Estado" required="true" />
+                </div>
+                <div class="ciudad">
+                    <p class="etiqueta">Ciudad</p>
+                    <input type="text" id="Ciudad" name="Ciudad" placeholder="Ciudad" required="true" />
+                </div>
+                <div class="cp">
+                    <p class="etiqueta">C.P.</p>
+                    <input type="text" id="Cp" name="Cp" placeholder="Codigo Postal" required="true" />
+                </div>
+                <div class="direccion">
+                    <p class="etiqueta">Direccion</p>
+                    <input type="text" id="Direccion" name="Direccion" placeholder="Direccion" required="true" />
+                </div>
+                <div class="btn">
+                    <a href="principal-paciente.html">Registrar</a>
+                </div>
+
+            </div>
+        </main>
+        <footer>Equipo de trabajo</footer>
+    </div>
+</body>
+
+</html>

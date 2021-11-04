@@ -1,0 +1,231 @@
+html {
+    font-size: 62.5%; /* 16px x 62.5% = 10px = 1rem*/
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-size: 1.6rem;
+    /* font-family: ; */
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+    'header'
+    'main'
+    'footer';
+    grid-template-columns: 1fr;
+    grid-template-rows: 10rem 1fr 5rem;
+    height: 100%;
+}
+
+header {
+    grid-area: header;
+    background-color: #146173;
+    position: fixed;
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a img {
+    margin-top: 2rem;
+    padding: 1rem;    
+}
+
+.name-img {
+    display: flex;
+    align-items: center;
+}
+
+.name-img p {
+    padding: 1rem;
+    color: #ffffff;
+}
+
+.name-img img {
+    height: 7rem;
+    margin: 1rem;
+}
+
+main {
+    grid-area: main;
+}
+
+.grid-layout {
+    display: grid;
+    grid-template-areas: 'barra contenido';
+    grid-template-columns: 13rem 1fr;
+    height: 100%;
+}
+
+.grid-lateral {
+    grid-area: barra;
+    display: grid;
+    grid-template-rows: 4rem 4rem 4rem 4rem auto;
+    background-color: #4995A6;
+    position: fixed;
+    height: 100%;
+    width: 13rem;
+    margin-top: .8rem;
+}
+
+.grid-lateral a:hover {
+    text-decoration: underline;
+}
+
+.button-1 {
+    padding-top: 1rem;
+    padding-left: 2.5rem;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #146173;
+}
+
+.button-2,.button-3,.button-4 {
+    text-align: center;
+    padding-top: 1rem;
+    text-decoration: none;
+    color: #ffffff;
+    border: 1px solid #146173;
+    border-bottom: 1px solid #146173
+}
+
+.button-2 {
+    border-top: 2px solid #146173;
+}
+
+.button-4 {
+    border-bottom: 2px solid #146173
+}
+
+.grid-principal {
+    grid-area: contenido;
+}
+
+.nombrePaciente {
+    margin: 2rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.seccion1 {
+    display: grid;
+    grid-template-areas: 'datos-1 boton-1';
+    grid-template-columns: 63rem auto;
+    border: 1px solid #c4c4c4;
+    border-radius: 2px;
+    margin: 3rem 6rem 2rem ;
+}
+
+.datos-1 {
+    grid-area: datos-1;
+    display: flex;
+    margin: 1.4rem 0rem 3rem 4rem;
+}
+
+.general {
+    margin-right: 15%;
+}
+
+.general input {
+    width: 25rem;
+}
+
+.boton-1 {
+    grid-area: boton-1;
+    margin: auto;
+}
+
+.boton-1 a{
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #146173;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    border-radius: 2px;
+}
+
+.seccion2 {
+    display: grid;
+    grid-template-areas: 'datos-2 boton-2';
+    grid-template-columns: 63rem auto;
+    border: 1px solid #c4c4c4;
+    border-radius: 2px;
+    margin: 2rem 6rem 2rem;
+}
+
+.datos-2 {
+    grid-area: datos-2;
+    display: flex;
+    margin: 1.4rem 0rem 3rem 4rem;
+}
+
+.peso {
+    margin-right: 10%;
+}
+
+.boton-2 {
+    grid-area: boton-2;
+    margin: auto;
+}
+
+.boton-2 a{
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #146173;
+    padding-left: 2.3rem;
+    padding-right: 2.3rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    border-radius: 2px;
+}
+
+.seccion3 {
+    display: grid;
+    grid-template-areas: 'datos-3 boton-3';
+    grid-template-columns: 63rem auto;
+    border: 1px solid #c4c4c4;
+    border-radius: 2px;
+    margin: 2rem 6rem 2rem;
+}
+
+.datos-3 {
+    grid-area: datos-3;
+    display: flex;
+    margin: 1.4rem 0rem 3rem 4rem;
+}
+
+.boton-3 {
+    grid-area: boton-3;
+    margin: auto;
+}
+
+.boton-3 a{
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #146173;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    border-radius: 2px;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #146173;
+    color: #ffffff;
+    padding-left: 1rem;
+    padding-top: 2rem;
+    z-index: 1;
+}
